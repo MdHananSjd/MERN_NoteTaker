@@ -5,7 +5,7 @@ const router = express.Router();
 
 router.get("/", getAllNotes);
 router.post("/", createNote);
-router.put("/:id", updateNote);
-router.delete("/:id", deleteNote);
+router.put("/:id", updateNote); //requires the id because its a specific change in the database schema
+router.delete("/:id", deleteNote); //requires the id because its a specific change in the database schema
 
 export default router
